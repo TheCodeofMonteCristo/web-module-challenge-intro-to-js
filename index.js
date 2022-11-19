@@ -74,7 +74,7 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(ab, b,){
+function multiply(a, b,){
   return a * b;
 }
 
@@ -163,7 +163,7 @@ function hungryDog(weight, age){
   }else{
     return "please try again";
   }
-  
+}
 console.log('task 3', hungryDog(15, 1));
 
 
@@ -204,16 +204,16 @@ if(computer <= 0.34){
 function game(user, computer){
   if(user === computer){
     return "it's a tie";
-  }else if(user === "rock" &&& computer === "scissors"){
+  }else if(user === "rock" && computer === "scissors"){
     return "you win!";
-  }else if(user === "paper" && computer = "rock"){
-  return "you win!";
-  }else if(user === "scissors" && computer = "paper"){
+  }else if(user === "paper" && computer === "rock"){
+    return "you win!";
+  }else if(user === "scissors" && computer === "paper"){
   return "you win!";
   }else{
   return "you lose!";
   }
-
+}
 console.log("task 4", game("paper", computer));
 
 
@@ -269,9 +269,9 @@ Using the annoyingSong function below do the following:
 */
 
 function annoyingSong(number){
-  for(let i= number; i > 0; i --){
-    return "${i}"bottles of soda on the wall, ${i} bottles of soda, take one down, pass it around, ${i -1} bottles of soda on the wall";
-  }
+  
+    return `${number} bottles of soda on the wall, ${number} bottles of soda, take one down pass it around ${number -1} bottles of soda on the wall`;
+  
 }
 
 console.log ("task 6", annoyingSong(8));
@@ -309,6 +309,8 @@ function grade(number){
 }
 
 console.log("task 7", grade(85));
+
+
 
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
